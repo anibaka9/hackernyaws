@@ -21,6 +21,7 @@ import { Input } from "@/components/ui/input";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar";
+import { SVGProps } from "react";
 
 export function Main() {
   return (
@@ -208,7 +209,7 @@ export function Main() {
   );
 }
 
-function CatIcon(props) {
+function CatIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -230,7 +231,7 @@ function CatIcon(props) {
   );
 }
 
-function SearchIcon(props) {
+function SearchIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
